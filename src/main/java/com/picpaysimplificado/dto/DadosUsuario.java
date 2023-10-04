@@ -2,5 +2,7 @@ package com.picpaysimplificado.dto;
 
 import com.picpaysimplificado.domain.TipoDeUsuario;
 
-public record DadosUsuario(String nome, String sobrenome, String  documento, String email, String senha, Double saldo, TipoDeUsuario tipoDeUsuario) {
+import java.math.BigDecimal;
+
+public record DadosUsuario(String nome, String sobrenome, String  documento, String email, String senha, BigDecimal saldo, TipoDeUsuario tipoDeUsuario) {
 }
