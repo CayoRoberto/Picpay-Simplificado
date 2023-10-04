@@ -25,7 +25,7 @@ public class Usuario {
     @Column(unique = true)
     private String email;
     private String senha;
-    private Double saldo;
+    private BigDecimal saldo;
     private TipoDeUsuario tipoDeUsuario;
 
     public Usuario(DadosUsuario dados){
@@ -37,4 +37,7 @@ public class Usuario {
         this.saldo = dados.saldo();
         this.tipoDeUsuario = dados.tipoDeUsuario();
     }
+
+
+
 }
