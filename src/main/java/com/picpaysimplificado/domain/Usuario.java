@@ -1,6 +1,6 @@
 package com.picpaysimplificado.domain;
 
-import com.picpaysimplificado.dto.DadosUsuario;
+import com.picpaysimplificado.dto.UsuarioDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -28,7 +28,7 @@ public class Usuario {
     private BigDecimal saldo;
     private TipoDeUsuario tipoDeUsuario;
 
-    public Usuario(DadosUsuario dados){
+    public Usuario(UsuarioDTO dados){
         this.nome = dados.nome();
         this.sobrenome = dados.sobrenome();
         this.documento = dados.documento();

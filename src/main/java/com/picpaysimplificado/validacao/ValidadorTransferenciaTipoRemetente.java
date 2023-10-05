@@ -13,7 +13,7 @@ public class ValidadorTransferenciaTipoRemetente implements ValidadorTransferenc
     @Override
     public void validarTransferencia(Usuario remetente, Usuario destinatario, BigDecimal valor){
         if(Objects.equals(remetente.getTipoDeUsuario().toString(), "LOJISTA")){
-            throw new ValidacaoException("Usuário do tipo lojista não está autorizado para fazer transações");
+            throw new ValidacaoException("Usuário do tipo lojista não está autorizado para fazer transferência");
         }
 
 
